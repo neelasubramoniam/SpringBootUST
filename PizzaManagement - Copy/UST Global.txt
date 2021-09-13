@@ -1,0 +1,139 @@
+STEPS
+1. Intall JDK (JDK 1.8)
+2. Set Classpath and Path variable (Environment Variable)
+3. Download Eclipse IDE Enterprise for JAVA Developers
+   Link: https://www.eclipse.org/downloads/packages/release/2021-06/r/eclipse-ide-enterprise-java-and-web-developers
+4. Open Eclipse --> Help --> MarketPlace --> Search --> spring tool suite --> Install --> Spring Tools 4
+
+Pre requisite
+1. Maven Installed and set environment variables
+2. Install mySQL installer for windows (https://dev.mysql.com/downloads/)
+Set admin username as root and password as root
+3. Check if you are able to Open mySQL Workbench
+
+
+
+
+Query Parameters
+Path Parameters
+Rest Controller Class
+
+What is CRUD?
+C-Create
+R-Read
+U-Update
+D-Delete
+
+
+HTTP Methods?
+
+GET
+PUT
+POST
+DELETE
+
+
+What is POST - Create
+What is GET - Read
+What is PUT - Update
+What is DELETE - DELETE
+
+
+Programming Language - One Class which should be handling all the incoming request (HTTP Methods)
+That class is called Controller Class.
+The controller class should have the annotation called @RestController
+
+
+Create a simple CALC Application
+	Input: Two numbers as a path parameter
+	and do add, multiply, division and subtract operations
+	
+STEPS
+STEP 1 : Goto https://start.spring.io/
+STEP 2 : Select the default options
+	 1. Provide the artifact ID
+	 2. Java 8
+	 3. Add Dependencies --> Spring Web 
+	 4. Generate Project
+	 5. Extract the project Generated
+STEP 3. Goto Eclipse
+STEP 4. Import the Project in Eclipse
+	
+To 
+
+Run the Project
+	Run as Spring Boot -- SpringApplication Class
+
+
+CASE STUDY:
+
+Add
+Multply
+Subtract
+Division
+
+
+Next Program
+
+http://localhost:8080/welcome?name=sam
+Welcome Dear Customer Sam
+
+http://localhost:8080/welcome?name=JAM
+Welcome Dear Customer JAM
+
+
+
+What is GITHUB (Remote Repository)
+Centralized Repository for Version Control 
+GitLab - 
+
+What is GIT (Local Repository)
+
+
+Commit --> Save the Changes
+
+Check in - Push
+Check out - Pull
+
+
+Acccess Token for UST Project : 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
+
+
+STEP01 - Create an Account in GItHUB
+STEP02 - Create an Access Token --> Click on Settings --> Developer Settings --> Personal Access Token --> Generate New Token -->
+STEP02 - Enter some Note --> Select all the Scopes --> Generate Token --> Copy the Token -- Keep it in some files for reference.	
+STEP03 - CREATE a New Repository in GITHUB
+STEP04 - Goto Eclipse --> Open Perspective --> Git --> Clone Git Repository --> Copy project URL from the GitHUB --> Paste it in Clone 	 Git Repository URI--> Enter USERNAME --> Enter the Access Token in the Password --> Select Store in Secure Store (Optional)
+         Next --> Next --> Finish
+STEP05 - Navigate JAVA EE Default Perspective --> Right Click on the Project --> Team --> Share Project --> Select the Repository -->
+         Finish
+STEP06 - Right Click on the Project --> Teams --> Commit --> Select all the files from the UNSTAGED CHANGES SECTION --> Drag and Drop 	 all the files to STAGED CHANGES --> Enter Some Commit Messages --> Commit and PUSH
+STEP07 - Preview or Push or Push --. Close
+STEP08 - Goto your GitHUB and Refresh the project 
+
+
+
+
+Mockito --> Framework which is Used to Mock the services
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

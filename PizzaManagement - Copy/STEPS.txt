@@ -1,0 +1,59 @@
+CREATE A NEW SPRING BOOT PROJECT
+EXECUTE RUNNER CLASS and CHECK IF SERVER RETURNS WHITELABEL ERROR
+-----------------------------------------------------------------
+CREATE TABLE and INSERT THE DATA in mySQL
+CREATE database GLOBALUST;
+USE GLOBALUST;
+CREATE TABLE INDUST(ename varchar(50), id varchar(50), esal varchar(50), PRIMARY KEY (id))
+SELECT * from INDUST;
+INSERT INTO INDUST(ENAME,id,ESAL) values("JAM","JAM1","10000");
+INSERT INTO INDUST(ENAME,id,ESAL) values("JIM","JIM1","20000");
+SELECT * from INDUST;
+-------------------------------------------------------------------
+CREATE RESTCONTROLLER CLASS
+IN the POM.xml file - Add the my sql connector - https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.26
+-----------------------------------------------------------------------------
+application.properties FILE - UPDATE with DB DETAILS and JPA Details 
+spring.datasource.url=jdbc:mysql://localhost:3306/APIPROJECT
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.hibernate.ddl-auto=update
+spring.test.database.replace=none
+
+logging.file.name=log/application.log
+-----------------------------------------------------------------------------------
+Develop ADD EMPLOYEE Requirement
+	1. Create Bean Class (Getters and Setters) for eID,eNAME, eSAL
+	(Encapsulation, Table Details, Column References between the table and JAVA Objects, Primary Keys)
+	
+	2. Create Interface and extend it with JpaRepository 
+	(//T stands for Bean Class Name EX: EMS, ---- ID is the PKEY Data Type EX: String) 
+	IMPORTANT ---> DONT CREATE BEAN CLASS WITH THE TABLE NAME
+	
+	3. updating the Runner class with the below line
+		implements commandlineInterface (Override the server)
+		
+		Add the below lines
+		
+		public void run(String... args) throws Exception 
+		{
+		EMS ems= repository.findById("JIM1").get();
+		System.out.println(ems.geteID());
+		System.out.println(ems.geteNAME());
+		System.out.println(ems.geteSAL());
+		}
+		
+	4. RUN and check if you are able to fetch the records from DB
+	5. Add 
+	
+	
+	
+			
+	
+	 	
+
+
+	
